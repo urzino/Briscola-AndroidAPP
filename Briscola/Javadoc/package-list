@@ -1,0 +1,15 @@
+it.polimi.ma.group10.trump
+it.polimi.ma.group10.trump.controller
+it.polimi.ma.group10.trump.model.game
+it.polimi.ma.group10.trump.model.game.enumerations
+it.polimi.ma.group10.trump.model.game.exceptions.card
+it.polimi.ma.group10.trump.model.game.exceptions.dealer
+it.polimi.ma.group10.trump.model.game.exceptions.deck
+it.polimi.ma.group10.trump.model.game.exceptions.game
+it.polimi.ma.group10.trump.model.game.exceptions.player
+it.polimi.ma.group10.trump.model.persistance
+it.polimi.ma.group10.trump.model.persistance.enumerations
+it.polimi.ma.group10.trump.service
+it.polimi.ma.group10.trump.view
+it.polimi.ma.group10.trump.view.activity
+it.polimi.ma.group10.trump.view.dialog

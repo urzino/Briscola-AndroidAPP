@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">Briscola</string>
+    <string name="single_player">Partita Locale</string>
+    <string name="ai_vs_ai">Demo Locale</string>
+    <string name="single_player_online">Partita Online</string>
+    <string name="ai_vs_online">Demo Online</string>
+    <string name="dlg_restart">Rigioca</string>
+    <string name="dlg_home">Home</string>
+    <string name="dlg_match_won">Hai Vinto!</string>
+    <string name="dlg_match_loose">Hai Perso!</string>
+    <string name="dlg_match_draw">Pareggio!</string>
+    <string name="tw_settings">Impostazioni</string>
+    <string name="stats">Statistiche</string>
+    <string name="achievements">Traguardi</string>
+    <string name="wins">Vittore</string>
+    <string name="losses">Sconfitte</string>
+    <string name="draws">Pareggi</string>
+    <string name="total_games">Partite Totali</string>
+    <string name="average_trumps">Briscole per partita: </string>
+    <string name="average_loads">Carichi per partita: </string>
+    <string name="average_points">Punti per partita: </string>
+    <string name="leave_match">Vuoi abbandonare?</string>
+    <string name="leave_game">Vuoi uscire dal gioco?</string>
+    <string name="yes_leave">Si! abbandona</string>
+    <string name="no_keep_playing">No, gioca ancora</string>
+    <string name="no_stats">Gioca almeno una partita per le statistiche!</string>
+
+    <!-- Settings -->
+    <string name="french">Francesi</string>
+    <string name="neapolitan">Napoletane</string>
+    <string name="spanish">Spagnole</string>
+    <string name="bg_green">Verde</string>
+    <string name="bg_red">Rosso</string>
+    <string name="bg_wood">Legno</string>
+    <string name="bg_cloth">Tovaglia</string>
+    <string name="hints">Suggerimenti</string>
+    <string name="difficulty">Difficoltà</string>
+    <string name="sound_fx">FX Sonori</string>
+    <string name="music">Musica</string>
+    <!--Dialogs -->
+    <string name="your_turn">E\' il tuo turno!</string>
+    <string name="choose_room">Scegli la stanza</string>
+    <string name="opponent_gone">Il tuo avversario è scappato!</string>
+    <string name="no_opponent">Nessun avversario trovato! Prova più tardi!</string>
+    <string name="points">Punti</string>
+    <string name="room_closed">La stanza è chiusa!</string>
+    <string name="no_opponent_found">Nessun avversario trovato, passa dopo!</string>
+    <string name="connection_lost">Connessione persa!</string>
+    <string name="general_error">Ops, c\'è stato un problema!</string>
+    <string name="wrong_match">Sei nella partita sbagliata!</string>
+    <string name="not_your_turn">Non è il tuo turno</string>
+    <string name="card_not_valid">Carta non valida!</string>
+    <string name="server_off">Il server non risponde, prova dopo!</string>
+    <!--Font location-->
+    <string name="font">fonts/bangers.ttf</string>
+
+
+</resources>
+

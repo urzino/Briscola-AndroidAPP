@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+    android:id="@+id/ll_dial_end_match"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_background"
+    android:gravity="center"
+    android:padding="10dp"
+    >
+
+
+    <TextView
+        android:id="@+id/tv_match_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="55"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dlg_btn_result"
+        android:gravity="center"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/tv_match_points"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="25"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dlg_btn_point"
+        android:gravity="center"
+        android:textAlignment="center" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="20"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:id="@+id/btn_home"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:src="@drawable/btn_home"
+            android:layout_margin="@dimen/dlg_btn_margin"/>
+
+        <ImageView
+            android:id="@+id/btn_rematch"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:src="@drawable/btn_rematch"
+            android:layout_margin="@dimen/dlg_btn_margin" />
+    </LinearLayout>
+</LinearLayout>

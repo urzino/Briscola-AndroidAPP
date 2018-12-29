@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:id="@+id/ll_dial_search_opp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_background"
+    android:padding="20dp">
+
+    <RelativeLayout
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:translationZ="100dp"
+        android:gravity="center">
+
+        <ImageView
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:id="@+id/iv_cloud"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="30dp"
+            android:adjustViewBounds="true"
+            android:layout_centerInParent="true"
+            app:srcCompat="@drawable/cloud" />
+
+        <ImageView
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:id="@+id/iv_magnifier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="30dp"
+            android:adjustViewBounds="true"
+            android:layout_centerInParent="true"
+            app:srcCompat="@drawable/magnifier" />
+    </RelativeLayout>
+
+    <ImageView
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:translationZ="0dp"
+        android:id="@+id/btn_cancel_search"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:padding="10dp"
+        app:srcCompat="@drawable/btn_cancel"
+        android:layout_margin="@dimen/dlg_btn_margin"/>
+
+</LinearLayout>

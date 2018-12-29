@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+    android:id="@+id/ll_dial_leave_match"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_background"
+    android:gravity="center"
+    android:padding="10dp">
+
+
+    <TextView
+        android:id="@+id/tv_leave_match"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="65"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:text="@string/leave_game"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="35"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/btn_leave"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:src="@drawable/btn_yes"
+            android:layout_margin="@dimen/dlg_btn_margin" />
+
+
+        <ImageView
+            android:id="@+id/btn_continue"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:src="@drawable/btn_no"
+            android:layout_margin="@dimen/dlg_btn_margin" />
+    </LinearLayout>
+</LinearLayout>

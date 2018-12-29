@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/setting_border"
+    >
+
+
+    <TextView android:id="@+id/txtTitle"
+        android:layout_width="0dp"
+        android:layout_weight="4"
+        android:layout_height="match_parent"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textColor="#ffffff"
+        android:layout_margin="5dp"
+        android:textSize="@dimen/ach_text_size"
+        android:lines="1"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="6"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/firstStar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/ach_star"
+                android:adjustViewBounds="false"
+                android:scaleType="fitXY"
+                android:gravity="center"
+                android:textColor="#ff0000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/firstStarText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/firstStar"
+                android:layout_alignLeft="@id/firstStar"
+                android:layout_alignBottom="@id/firstStar"
+                android:layout_alignRight="@id/firstStar"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:lines="1"
+                android:textSize="@dimen/ach_number_size"
+                android:textColor="@color/light_red"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/secondStar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/ach_star"
+                android:adjustViewBounds="false"
+                android:scaleType="fitXY"
+                android:gravity="center"
+                android:textColor="#ff0000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/secondStarText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/secondStar"
+                android:layout_alignLeft="@id/secondStar"
+                android:layout_alignBottom="@id/secondStar"
+                android:layout_alignRight="@id/secondStar"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:lines="1"
+                android:textSize="@dimen/ach_number_size"
+                android:textColor="@color/light_red"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/thirdStar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/ach_star"
+                android:adjustViewBounds="false"
+                android:scaleType="fitXY"
+                android:gravity="center"
+                android:textColor="#ff0000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/thirdStarText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/thirdStar"
+                android:layout_alignLeft="@id/thirdStar"
+                android:layout_alignBottom="@id/thirdStar"
+                android:layout_alignRight="@id/thirdStar"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:lines="1"
+                android:textSize="@dimen/ach_number_size"
+                android:textColor="@color/light_red"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

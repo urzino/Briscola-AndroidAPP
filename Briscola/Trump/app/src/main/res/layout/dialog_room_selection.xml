@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+    android:id="@+id/ll_dial_room_selection"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_background"
+    android:gravity="center"
+    android:padding="10dp">
+
+
+    <TextView
+        android:id="@+id/tv_select_room"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="65"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:text="@string/choose_room"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="35"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/btn_public"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:src="@drawable/btn_public"
+            android:layout_margin="@dimen/dlg_btn_margin"
+            />
+        <ImageView
+            android:id="@+id/btn_private"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:src="@drawable/btn_private"
+            android:layout_margin="@dimen/dlg_btn_margin"/>
+    </LinearLayout>
+</LinearLayout>

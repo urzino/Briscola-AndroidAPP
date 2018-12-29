@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="ach_array">
+        <item>10,100,1000,Vittorie</item>
+        <item>5,50,100,Pareggi</item>
+        <item>100,1000,10000,Partite</item>
+        <item>1000,5000,10000,Punti</item>
+        <item>100,500,1000,Briscole</item>
+        <item>50,100,1000,Carichi</item>
+    </array>
+</resources>

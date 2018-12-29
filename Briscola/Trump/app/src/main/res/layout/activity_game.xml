@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:id="@+id/lin_playground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="it.polimi.ma.group10.trump.view.activity.GameActivity">
+
+    <!-->opponent's cards</!-->
+    <android.support.v7.widget.LinearLayoutCompat
+        android:translationZ="1dp"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp">
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:id="@+id/lin_op_cards"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical">
+
+
+            <ImageView
+                android:id="@+id/iw_op_card0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="2dp"
+                android:adjustViewBounds="true"
+                app:srcCompat="@drawable/card_f_back" />
+
+
+            <ImageView
+                android:id="@+id/iw_op_card1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                app:srcCompat="@drawable/card_f_back" />
+
+            <ImageView
+                android:id="@+id/iw_op_card2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                app:srcCompat="@drawable/card_f_back" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <!--><cards on table, deck and trump/!-->
+    <android.support.v7.widget.LinearLayoutCompat
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="45"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5" />
+        <!-->opponent's card</!-->
+        <android.support.v7.widget.LinearLayoutCompat
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="35"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="20" />
+
+            <ImageView
+                android:id="@+id/iw_op_card"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="45"
+                android:padding="2dp"
+                android:adjustViewBounds="true"
+                app:srcCompat="@drawable/card_f_1b" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="40" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <!-->player1 card</!-->
+        <android.support.v7.widget.LinearLayoutCompat
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="35"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="40" />
+
+            <ImageView
+                android:id="@+id/iw_card_pl"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="45"
+                android:padding="2dp"
+                android:adjustViewBounds="true"
+                app:srcCompat="@drawable/card_f_1b" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="20" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <!-->deck trump and remaining cards</!-->
+        <android.support.v7.widget.LinearLayoutCompat
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="35"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            >
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="45" />
+
+            <RelativeLayout
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="40">
+
+                <ImageView
+                    android:id="@+id/iw_trump"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="2dp"
+                    android:adjustViewBounds="true"
+                    android:rotation="-90"
+                    app:srcCompat="@drawable/card_f_2g" />
+
+                <ImageView
+                    android:id="@+id/iw_deck"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:padding="2dp"
+                    app:srcCompat="@drawable/card_f_back" />
+            </RelativeLayout>
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_weight="15"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <Space
+
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_weight="5"/>
+
+                <TextView
+                    android:id="@+id/txt_nr_cards_deck"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"
+                    android:background="@drawable/dialog_background"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:padding="1dp"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/light_red"
+                    android:text="40"
+                    android:layout_marginRight="2dp"/>
+
+
+            </android.support.v7.widget.LinearLayoutCompat>
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="30"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:id="@+id/btn_suggestion"
+                    android:padding="5dp"
+                    app:srcCompat="@drawable/hint"/>
+            </android.support.v7.widget.LinearLayoutCompat>
+
+
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <!-->players's cards</!-->
+    <android.support.v7.widget.LinearLayoutCompat
+        android:translationZ="1dp"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="30"
+        android:gravity="center_horizontal|center_vertical"
+        android:padding="20dp"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:id="@+id/lin_pl_cards"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical"
+            >
+
+            <ImageView
+                android:id="@+id/iw_card0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                app:srcCompat="@drawable/card_f_1b" />
+
+
+            <ImageView
+                android:id="@+id/iw_card1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                app:srcCompat="@drawable/card_f_1c" />
+
+
+            <ImageView
+                android:id="@+id/iw_card2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                app:srcCompat="@drawable/card_f_1g" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+    <ProgressBar
+        android:id="@+id/pb_progress_countdown"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_marginTop="3dp"
+        style = "?android:attr/progressBarStyleHorizontal"
+        android:progressDrawable="@drawable/gradient_progress"
+        />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+</android.support.v7.widget.LinearLayoutCompat>

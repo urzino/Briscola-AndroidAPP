@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+    android:id="@+id/ll_dial_no_opp_found"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_background"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tv_msg_fail_start"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:text="@string/no_opponent"
+        android:textSize="30sp"/>
+
+    <ImageView
+        android:id="@+id/btn_ok_opn_not_fnd"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        app:srcCompat="@drawable/btn_home"
+        android:layout_margin="@dimen/dlg_btn_margin"/>
+
+
+</LinearLayout>

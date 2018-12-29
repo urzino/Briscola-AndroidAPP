@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="ach_array">
+        <item>10,100,1000,Victory</item>
+        <item>5,50,100,Draws</item>
+        <item>100,1000,10000,Games</item>
+        <item>1000,5000,10000,Points</item>
+        <item>100,500,1000,Trumps</item>
+        <item>50,100,1000,Loads</item>
+    </array>
+</resources>

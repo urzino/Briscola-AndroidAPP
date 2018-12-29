@@ -1,0 +1,55 @@
+package it.polimi.ma.group10.trump;
+
+import org.junit.Test;
+import static org.junit.Assert.*;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
+import java.util.Arrays;
+import java.util.Collection;
+
+
+/**
+ * This test class tests the MoveTest method
+ * those test run a match starting from a configuration, executing the defined moves
+ */
+@RunWith(value = Parameterized.class)
+public class MoveTest {
+
+    private String config;
+    private String moves;
+    private String expected;
+
+    @Parameterized.Parameters
+    public static Collection<Object[]> data(){
+        //test cases
+        return Arrays.asList(new Object[][] {
+                { "0B5S4G6S2C5GKB7B6CHCHB1GKC5C4B1BHG7C6BJS6G7G4C3C7SJBHS2S3S4S1S2G3BJG5B..JCKG2B.1CKS3G..", "0","1B5S4G6S2C5GKB7B6CHCHB1GKC5C4B1BHG7C6BJS6G7G4C3C7SJBHS2S3S4S1S2G3BJG5B.JC.KG2B.1CKS3G.."},
+                { "0B5S4G6S2C5GKB7B6CHCHB1GKC5C4B1BHG7C6BJS6G7G4C3C7SJBHS2S3S4S1S2G3BJG5B..JCKG2B.1CKS3G..", "00","1B6S2C5GKB7B6CHCHB1GKC5C4B1BHG7C6BJS6G7G4C3C7SJBHS2S3S4S1S2G3BJG5B..KG2B4G.KS3G5S..JC1C"},
+                { "0B5S4G6S2C5GKB7B6CHCHB1GKC5C4B1BHG7C6BJS6G7G4C3C7SJBHS2S3S4S1S2G3BJG5B..JCKG2B.1CKS3G..", "001","0B6S2C5GKB7B6CHCHB1GKC5C4B1BHG7C6BJS6G7G4C3C7SJBHS2S3S4S1S2G3BJG5B.3G.KG2B4G.KS5S..JC1C"},
+                { "0B5S4G6S2C5GKB7B6CHCHB1GKC5C4B1BHG7C6BJS6G7G4C3C7SJBHS2S3S4S1S2G3BJG5B..JCKG2B.1CKS3G..", "0011","0B5GKB7B6CHCHB1GKC5C4B1BHG7C6BJS6G7G4C3C7SJBHS2S3S4S1S2G3BJG5B..KG4G6S.KS5S2C.3G2B.JC1C"},
+                { "0B5S4G6S2C5GKB7B6CHCHB1GKC5C4B1BHG7C6BJS6G7G4C3C7SJBHS2S3S4S1S2G3BJG5B..JCKG2B.1CKS3G..", "00110","1B5GKB7B6CHCHB1GKC5C4B1BHG7C6BJS6G7G4C3C7SJBHS2S3S4S1S2G3BJG5B.KG.4G6S.KS5S2C.3G2B.JC1C"},
+                { "0B3S2SKS4SHS5SJS6SKC5CHC6CJC7C1G1B2GKG3G3B4B4G5B5G6B6G7B7GJBJGHBHGKB2B..1S1C3C.7S2C4C..", "0000000000000000000000000000000000000000","DRAW"},
+                { "0B3S2SKS4SHS5SJS6SKC5CHC6CJC7C1G1B2GKG3G3B4B4G5B5G6B6G7B7GJBJGHBHGKB2B..1S1C3C.7S2C4C..", "0000000000000000000000000000000000000001","ERROR: card 2 can't be played; only 1 cards available."},
+                { "0B5S4G6S2C5GKB7B6CHCHB1GKC3C7SJBHS2S3S4S1S2G3BJG5B..JCKG2B.1CKS3G.7C6BJS6G.5C4B1BHG7G4C", "00110000000001110000000000001100","ERROR: Too much moves in the configuration"},
+                { "0B..5S.HB..4G6S2C5GKB7B6CHC1GKC3C7SJBHS2S3S4S1S2G3BJG5BJCKG2B1CKS3G7C6BJS6G5C4B1BHG7G4C", "00","WINNER1120"},
+                { "0B..HB.5S.4G6S2C5GKB7B6CHC1GKC3C7SJBHS2S3S4S1S2G3BJG5BJCKG2B1CKS3G7C6BJS6G5C4B1BHG7G4C.", "00","WINNER0120"},
+                { "0B..HB.5S..4G6S2C5GKB7B6CHC1GKC3C7SJBHS2S3S4S1S2G3BJG5BJCKG2B1CKS3G7C6BJS6G5C4B1BHG7G4C", "00","WINNER1117"},
+        });
+    }
+
+    public MoveTest(String config, String moves, String expected) {
+        this.config = config;
+        this.moves = moves;
+        this.expected = expected;
+    }
+
+    @Test
+    public void testMove(){
+        TestMethods testMethods = TestMethods.getInstance();
+        String result = testMethods.moveTest(config,moves);
+        assertEquals("Wrong result",expected,result);
+    }
+
+
+
+}

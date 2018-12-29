@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Title size-->
+    <dimen name="title_size">20dp</dimen>
+    <!--No stats-->
+    <dimen name="no_stats_size">50dp</dimen>
+    <!--Statistics-->
+    <dimen name="stats_text_size">18dp</dimen>
+    <dimen name="stats_legend_size">18sp</dimen>
+    <!--Settings-->
+    <dimen name="sound_text_size">14dp</dimen>
+    <dimen name="music_text_size">14dp</dimen>
+    <dimen name="difficulty_text_size">14dp</dimen>
+    <dimen name="hint_text_size">14dp</dimen>
+    <dimen name="page_viewer_text_size">12dp</dimen>
+    <!--Achievements-->
+    <dimen name="ach_text_size">20dp</dimen>
+    <dimen name="ach_number_size">15dp</dimen>
+    <!--Dialogs-->
+    <dimen name="dlg_btn_margin">5dp</dimen>
+    <dimen name="dlg_btn_point">30dp</dimen>
+    <dimen name="dlg_btn_result">40dp</dimen>
+</resources>

@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">Briscola</string>
+    <string name="single_player">Local Match</string>
+    <string name="ai_vs_ai">Local Demo</string>
+    <string name="single_player_online">Online Match</string>
+    <string name="ai_vs_online">Online Demo</string>
+    <string name="dlg_restart">Rematch</string>
+    <string name="dlg_home">Home</string>
+    <string name="dlg_match_won">You Won!</string>
+    <string name="dlg_match_loose">You Lose!</string>
+    <string name="dlg_match_draw">Draw!</string>
+    <string name="tw_settings">Settings</string>
+    <string name="stats">Statistics</string>
+    <string name="achievements">Achievements</string>
+    <string name="wins">Wins</string>
+    <string name="losses">Losses</string>
+    <string name="draws">Draws</string>
+    <string name="total_games">Total Games</string>
+    <string name="average_trumps">Trumps per match: </string>
+    <string name="average_loads">Loads per match: </string>
+    <string name="average_points">Points per match: </string>
+    <string name="leave_match">Do you want to leave?</string>
+    <string name="leave_game">Quit the game?</string>
+    <string name="yes_leave">Yes, Leave!</string>
+    <string name="no_keep_playing">No, Keep Playing!</string>
+    <string name="no_stats">Play a game to get your stats!</string>
+
+    <!-- Settings -->
+    <string name="french">French</string>
+    <string name="neapolitan">Neapolitan</string>
+    <string name="spanish">Spanish</string>
+    <string name="bg_green">Green</string>
+    <string name="bg_red">Red</string>
+    <string name="bg_wood">Wood</string>
+    <string name="bg_cloth">Cloth</string>
+    <string name="hints">Hints</string>
+    <string name="difficulty">difficulty</string>
+    <string name="sound_fx">Sound FX</string>
+    <string name="music">Music</string>
+
+    <!--Dialogs -->
+    <string name="your_turn">Your turn!</string>
+    <string name="choose_room">Choose the room</string>
+    <string name="opponent_gone">Your opponent is gone!</string>
+    <string name="no_opponent">No opponent found! try again later!</string>
+    <string name="points">Points</string>
+    <string name="room_closed">This room is closed!</string>
+    <string name="no_opponent_found">No opponent found, try again later!</string>
+    <string name="connection_lost">Connection Lost!</string>
+    <string name="general_error">Sorry, an error occurred!</string>
+    <string name="wrong_match">You are in the wrong match!</string>
+    <string name="not_your_turn">Its not your turn!</string>
+    <string name="card_not_valid">Card not valid!</string>
+    <string name="server_off">Server not responding, try again later</string>
+    <!--Font location-->
+    <string name="font">fonts/bangers.ttf</string>
+
+
+</resources>
+
